@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_linea1"
+        android:icon="@drawable/ic_train"
+        android:title="Línea 1" />
+
+    <item
+        android:id="@+id/nav_lima_pass"
+        android:icon="@drawable/ic_bus"
+        android:title="Lima Pass" />
+
+    <item
+        android:id="@+id/nav_resumen"
+        android:icon="@drawable/ic_chart"
+        android:title="Resumen" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Cerrar Sesión" />
+</menu>

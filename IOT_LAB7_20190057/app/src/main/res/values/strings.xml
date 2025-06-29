@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LAB6_20190057</string>
+    <!-- Web client ID real de Firebase -->
+    <string name="default_web_client_id">246088854885-babuk51fd4krgotu1t5ldq1h01j1sim2.apps.googleusercontent.com</string>
+
+    <!-- Para Facebook (temporal por ahora) -->
+    <string name="facebook_app_id">temp_facebook_id</string>
+    <string name="fb_login_protocol_scheme">fbtemp_facebook_id</string>
+</resources>

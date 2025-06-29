@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Círculo de fondo -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M60,60m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+
+    <!-- Icono de tarjeta/transporte -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,40h60v40h-60z" />
+
+    <!-- Líneas decorativas -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M35,50h50v3h-50z" />
+
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M35,58h30v2h-30z" />
+
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M35,65h40v2h-40z" />
+
+</vector>
