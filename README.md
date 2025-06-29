@@ -1,5 +1,5 @@
-# LAB6_20190057 - **RICARDO ALVARADO RUIZ**
-Este es mi laboratorio 6 :)
+# IOT_LAB7_20190057 - **RICARDO ALVARADO RUIZ**
+Este es mi laboratorio 7 (el último siu) :)
 
 ## **Importante: LEER TODO ANTES DE REVISAR EL PROYECTO**
 Si bien decía en el enunciado "Los nuevos usuarios podrán registrarse desde la misma pantalla de inicio de
