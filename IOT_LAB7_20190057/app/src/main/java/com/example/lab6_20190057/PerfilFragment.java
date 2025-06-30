@@ -32,6 +32,8 @@ import com.google.firebase.auth.FirebaseUser;
 import java.io.IOException;
 import java.io.InputStream;
 
+// ESTE ARCHIVO FUE REALIZADO CON ASISTENCIA DE INTELIGENCIA ARTIFICIAL
+
 public class PerfilFragment extends Fragment {
 
     private static final int PICK_IMAGE_REQUEST = 1001;

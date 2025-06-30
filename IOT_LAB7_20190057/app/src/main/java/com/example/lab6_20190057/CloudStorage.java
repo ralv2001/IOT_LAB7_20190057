@@ -28,6 +28,8 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+// ESTE ARCHIVO FUE REALIZADO CON ASISTENCIA DE INTELIGENCIA ARTIFICIAL
+
 public class CloudStorage {
 
     private static final String TAG = "CloudStorage";
@@ -329,9 +331,9 @@ public class CloudStorage {
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
                 // Android 10+ (API 29+) - Usar MediaStore
                 ContentValues values = new ContentValues();
-                values.put(MediaStore.Images.Media.DISPLAY_NAME, "Lab7_" + System.currentTimeMillis() + ".jpg");
+                values.put(MediaStore.Images.Media.DISPLAY_NAME, "IOT_LAB7_20190057_" + System.currentTimeMillis() + ".jpg");
                 values.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
-                values.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/Laboratorio7");
+                values.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/IOT_LAB7_20190057");
 
                 Uri uri = context.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
 
@@ -346,13 +348,13 @@ public class CloudStorage {
             } else {
                 // Android 9 y anteriores - Usar carpeta Pictures
                 File picturesDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
-                File lab7Dir = new File(picturesDir, "Laboratorio7");
+                File lab7Dir = new File(picturesDir, "IOT_LAB7_20190057");
 
                 if (!lab7Dir.exists()) {
                     lab7Dir.mkdirs();
                 }
 
-                String imageName = "Lab7_" + System.currentTimeMillis() + ".jpg";
+                String imageName = "IOT_LAB7_20190057_" + System.currentTimeMillis() + ".jpg";
                 File imageFile = new File(lab7Dir, imageName);
 
                 FileOutputStream fos = new FileOutputStream(imageFile);

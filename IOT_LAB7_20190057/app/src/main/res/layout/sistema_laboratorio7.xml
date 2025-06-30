@@ -6,6 +6,8 @@
     android:padding="16dp"
     android:background="#f5f5f5">
 
+    <!-- ESTE ARCHIVO FUE REALIZADO CON ASISTENCIA DE INTELIGENCIA ARTIFICIAL -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
