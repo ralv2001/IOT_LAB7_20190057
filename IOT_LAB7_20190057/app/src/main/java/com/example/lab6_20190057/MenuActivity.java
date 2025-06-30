@@ -50,9 +50,8 @@ public class MenuActivity extends AppCompatActivity {
                     selectedFragment = new MovimientosLimaPassFragment();
                 } else if (itemId == R.id.nav_resumen) {
                     selectedFragment = new ResumenFragment();
-                } else if (itemId == R.id.nav_logout) {
-                    logout();
-                    return true;
+                } else if (itemId == R.id.nav_perfil) {
+                    selectedFragment = new PerfilFragment();
                 }
 
                 if (selectedFragment != null) {
@@ -70,20 +69,4 @@ public class MenuActivity extends AppCompatActivity {
                 .commit();
     }
 
-    private void logout() {
-        new AlertDialog.Builder(this)
-                .setTitle("Cerrar Sesión")
-                .setMessage("¿Estás seguro de que quieres cerrar sesión?")
-                .setPositiveButton("Sí, cerrar sesión", (dialog, which) -> {
-                    mAuth.signOut();
-                    Intent intent = new Intent(this, MainActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    startActivity(intent);
-                    finish();
-                    Toast.makeText(this, "Sesión cerrada exitosamente", Toast.LENGTH_SHORT).show();
-                })
-                .setNegativeButton("Cancelar", null)
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .show();
-    }
 }

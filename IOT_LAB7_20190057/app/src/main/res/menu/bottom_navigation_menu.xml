@@ -16,7 +16,7 @@
         android:title="Resumen" />
 
     <item
-        android:id="@+id/nav_logout"
-        android:icon="@drawable/ic_logout"
-        android:title="Cerrar Sesión" />
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/ic_accountcircle"
+        android:title="Perfil" />
 </menu>
