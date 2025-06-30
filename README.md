@@ -1,36 +1,61 @@
-# IOT_LAB7_20190057 - **RICARDO ALVARADO RUIZ**
+# IOT_LAB7_20190057 - **RICARDO ALVARADO RUIZ, LEER TODO ANTES DE REALIZAR LA REVISIÓN**
 Este es mi laboratorio 7 (el último siu) :)
 
-## **Importante: LEER TODO ANTES DE REVISAR EL PROYECTO**
-Si bien decía en el enunciado "Los nuevos usuarios podrán registrarse desde la misma pantalla de inicio de
-sesión.", agregué otra vista cuando se le de clic a "Registrarse" para que se vea mejor la aplicación. 
+## **Instrucciones de testeo de la aplicación**
 
-Por otro lado, el login y registro mediante  facebook no me funciona porque no tengo permisos para registrarme y verificarme en https://developers.facebook.com/: "No puedes realizar el cambio en este momento. Esto se debe a que detectamos que estás usando un dispositivo que no usas habitualmente y necesitamos proteger tu cuenta. Te permitiremos realizar el cambio cuando ya hayas usado este dispositivo durante un tiempo". Esta es la plataforma que me permitiría lograr hacer esa funcionalidad, pero por los motivos que he explicado, no se pudo.
+Se ha hecho uso del servicio de nube AWS mediante la función AWS lambda para el almacenamiento de las imágenes en AWS S3. A continuación, se detallan los pasos para poder testear la aplicación:
 
-Se adjuntan las evidencias a continuación:
+Paso 1: Registrarse/Loguearse en la aplicación. Se recomienda que se haga con google, ya que esto lo hará lo más rápido posible. Sin embargo, también hay la opción de registrarse poniendo un usuario y contraseña (dando clic en el botón de registrarse) sin necesidad de acceder con google y luego iniciar sesión con ese usuario.
 
-![image](https://github.com/user-attachments/assets/67dc4318-f6e2-4d12-a472-a9c92354602c)
+![image](https://github.com/user-attachments/assets/29ef047a-72af-4c63-a748-e4a1062735e0)
 
-Por otro lado, se sugiere que se realize las siguientes pruebas para  verificar el correcto funcionamiento de la aplicación:
+Paso 2: Un vez ya logueado, dirigirse a la sección de "Perfil" en la esquina inferior derecha y dar clic en "Seleccionar" para seleccionar la imagen que posteriormente se subirá a la nube.
 
-1. Ejecutar la aplicación
-2. Registrar un usuario con email y contraseña
-3. Probar Google Login
-4. Agregar movimientos en Línea 1 y Lima Pass (probar las funcionalidades de editar y borrar)
-5. Ver gráficos en la pestaña Resumen
-6. Probar filtros por fecha (en las 3 pestañas "Línea 1", "Lima Pass" y "Resumen")
-7. Cerrar sesión (con confirmación)
+![image](https://github.com/user-attachments/assets/375fb492-9c4e-45bb-b870-0121f309e8be)
 
-![image](https://github.com/user-attachments/assets/54e8cca5-fefd-4208-9804-794ee19b3960)
-![image](https://github.com/user-attachments/assets/2c92a76e-ce40-494b-b924-57cbb23510d9)
+Paso 3: Seleccionar una imagen, de preferencia, antigua, para no confindir la imagen seleccionada para subir a la nube con la imagen posteriormente descargada de la nube (que va a ser esa misma que se va a subir a la nube)
 
-Por último, se ha añadido al JP encargado del laboratorio, Angelo Ramos Neira, permisos de visualización del firebase del laboratorio para que se pueda realizar la verificación correspondiente:
+![image](https://github.com/user-attachments/assets/24f8399d-e1ec-4cef-a08a-924131278046)
 
-![image](https://github.com/user-attachments/assets/c4b965b9-1d85-4770-93bf-468aca0f54c8)
+Paso 4: Se habilitará el botón "Carga". Hacer clic ahí para poder subir la imagen a la nube. Una vez se haya hecho clic, se habilitará el botón "Descarga".
 
+![image](https://github.com/user-attachments/assets/4b698927-fabb-4168-af30-5c6b7c56f2a9)
+
+Paso 5: Hacer clic en el botón "Descarga" para descargar la imagen que se acaba de subir a la nube. Se mostrarán 3 cosas:
+  1. La imagen descargada en la parte de abajo.
+  2. Un link para que se verifique que la imagen es visible desde internet. Si desea, puede dar clic en el enlace para verificar que la imagen se ha cargado efectivamente en el S3, ya que esa URL es pública y accesible desde cualquier navegador web. Además, se tiene un botón "Copiar URL" para copiar la dirección y ponerla manualmente en el navegador y verificar que la imagen está disponible online.
+     
+     ![image](https://github.com/user-attachments/assets/fcb351e6-7762-4aca-9e56-0dcaafa5c2f4)
+     
+  4. Un toast que diga que la imagen se descargó correctamente y que ahora está guardada en la galería.
+
+     ![image](https://github.com/user-attachments/assets/c37a999d-d542-406d-904f-f93916729595)
+
+![image](https://github.com/user-attachments/assets/6de66ba0-1ccb-435f-8d2b-b08d0267a14d)
+
+Paso 6: Verificar que la imagen haya sido descargada correctamente.
+Dirigirse a la app "Google Photos", seleccionar "Collections" y luego "On this device".
+
+![image](https://github.com/user-attachments/assets/63ccab1c-857e-462e-86d9-1f8c9c068e57)
+
+Verificar que se creó el directorio "IOT_LAB7_20190057" en la galería y que la imagen descargada de la nuebe esté efectivamente en ese directorio.
+
+![image](https://github.com/user-attachments/assets/fa116f7d-22a3-4fd4-a986-fe1e0ac911f5)
+
+Por último, se ha añadido al JP encargado del laboratorio, Rodrigo Ruiz Cavero, permisos de visualización del firebase del laboratorio para que se pueda realizar la verificación correspondiente:
+
+![image](https://github.com/user-attachments/assets/e80fbe42-7905-435e-9f9b-c02a0f047ff6)
 
 ## **Uso de Inteligencia artificial**
-Se utilizó inteligencia artificial en los códigos en Java para ayuda a solucionar bugs, así como para comentarios que ayuden a identificar mejor las partes del código mapeadas a su funcionalidad.
+Se utilizó inteligencia artificial para ayuda en la resolución de bugs en los códigos Java, así como para generar comentarios que ayuden a identificar mejor las funcionalidades del código. También se utilizó IA para el desarrollo del código Java que conecta con AWS Lambda y AWS S3, específicamente en los archivos "CloudStorage.java" y "PerfilFragment.java".
+
+## **Detalles Técnicos del Cloud Storage**
+- **Servicio utilizado:** AWS S3 con AWS Lambda
+- **Endpoint:** API Gateway + Lambda function
+- **Formato de imagen:** JPEG con compresión 80%
+- **Codificación:** Base64 para transferencia
+- **URLs generadas:** Públicas con acceso directo desde navegador
+- **Directorio local:** `Pictures/IOT_LAB7_20190057/`
 
 ## **Información del Proyecto:** 
 La versión de Android utilizada es:  
@@ -43,4 +68,4 @@ Emulador configurado:
 
 ## **Configuración del Proyecto**
 **Nombre:** LAB6_20190057
-**Package name:** com.example.LAB6_20190057 
+**Package name:** com.example.LAB6_20190057
