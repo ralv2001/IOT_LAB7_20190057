@@ -9,11 +9,11 @@ Paso 1: Registrarse/Loguearse en la aplicación. Se recomienda que se haga con g
 
 ![image](https://github.com/user-attachments/assets/29ef047a-72af-4c63-a748-e4a1062735e0)
 
-Paso 2: Un vez ya logueado, dirigirse a la sección de "Perfil" en la esquina inferior derecha y dar clic en "Seleccionar" para seleccionar la imagen que posteriormente se subirá a la nube.
+Paso 2: Una vez ya logueado, dirigirse a la sección de "Perfil" en la esquina inferior derecha y dar clic en "Seleccionar" para seleccionar la imagen que posteriormente se subirá a la nube.
 
 ![image](https://github.com/user-attachments/assets/375fb492-9c4e-45bb-b870-0121f309e8be)
 
-Paso 3: Seleccionar una imagen, de preferencia, antigua, para no confindir la imagen seleccionada para subir a la nube con la imagen posteriormente descargada de la nube (que va a ser esa misma que se va a subir a la nube)
+Paso 3: Seleccionar una imagen, de preferencia, antigua, para no confundir la imagen seleccionada para subir a la nube con la imagen posteriormente descargada de la nube (que va a ser esa misma que se va a subir a la nube)
 
 ![image](https://github.com/user-attachments/assets/24f8399d-e1ec-4cef-a08a-924131278046)
 
@@ -27,7 +27,7 @@ Paso 5: Hacer clic en el botón "Descarga" para descargar la imagen que se acaba
      
      ![image](https://github.com/user-attachments/assets/fcb351e6-7762-4aca-9e56-0dcaafa5c2f4)
      
-  4. Un toast que diga que la imagen se descargó correctamente y que ahora está guardada en la galería.
+  3. Un toast que diga que la imagen se descargó correctamente y que ahora está guardada en la galería.
 
      ![image](https://github.com/user-attachments/assets/c37a999d-d542-406d-904f-f93916729595)
 
@@ -38,7 +38,7 @@ Dirigirse a la app "Google Photos", seleccionar "Collections" y luego "On this d
 
 ![image](https://github.com/user-attachments/assets/63ccab1c-857e-462e-86d9-1f8c9c068e57)
 
-Verificar que se creó el directorio "IOT_LAB7_20190057" en la galería y que la imagen descargada de la nuebe esté efectivamente en ese directorio.
+Verificar que se creó el directorio "IOT_LAB7_20190057" en la galería y que la imagen descargada de la nube esté efectivamente en ese directorio.
 
 ![image](https://github.com/user-attachments/assets/fa116f7d-22a3-4fd4-a986-fe1e0ac911f5)
 
@@ -48,6 +48,13 @@ Por último, se ha añadido al JP encargado del laboratorio, Rodrigo Ruiz Cavero
 
 ## **Uso de Inteligencia artificial**
 Se utilizó inteligencia artificial para ayuda en la resolución de bugs en los códigos Java, así como para generar comentarios que ayuden a identificar mejor las funcionalidades del código. También se utilizó IA para el desarrollo del código Java que conecta con AWS Lambda y AWS S3, específicamente en los archivos "CloudStorage.java" y "PerfilFragment.java".
+
+## **Verificación del Cloud Storage en S3**
+Se adjunta a continuación la evidencia de los directorios que contienen a las fotos subidas desde la aplicación. Se hace énfasis en mi correo y en la ruta para mayor verificación.
+
+![image](https://github.com/user-attachments/assets/eaccaa28-df4c-4112-95bd-46bf9632bcea)
+
+A parte de ello, se dejó adjunto en el github los pasos seguidos y los códigos implementados para la configuración del AWS lambda y AWS S3.
 
 ## **Detalles Técnicos del Cloud Storage**
 - **Servicio utilizado:** AWS S3 con AWS Lambda
